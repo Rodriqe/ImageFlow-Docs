@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageFlow - Image Converter</title>
+    <style>
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,#007AFF,#5AC8FA);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;margin:0}
+        .container{background:white;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:600px;padding:50px;text-align:center}
+        .icon{font-size:80px;margin-bottom:20px}
+        h1{color:#333;font-size:3em;margin-bottom:10px;margin-top:0}
+        .tagline{color:#666;font-size:1.2em;margin-bottom:30px}
+        .features{text-align:left;margin:30px 0;padding:20px;background:#f8f9fa;border-radius:10px}
+        .features h2{color:#007AFF;margin-bottom:15px;text-align:center;margin-top:0}
+        .features ul{list-style:none;padding:0;margin:0}
+        .features li{padding:8px 0;padding-left:30px;position:relative;color:#555}
+        .features li:before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold;font-size:1.2em}
+        .platforms{display:flex;justify-content:center;gap:10px;margin:20px 0;flex-wrap:wrap}
+        .platform-badge{background:#f0f8ff;border:2px solid #007AFF;color:#007AFF;padding:6px 16px;border-radius:20px;font-size:0.9em;font-weight:600}
+        .button{display:inline-block;padding:15px 30px;margin:10px;background:#007AFF;color:white;text-decoration:none;border-radius:10px;font-weight:600;transition:all .3s}
+        .button:hover{background:#0056b3;transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,.2)}
+        .button.secondary{background:#5AC8FA}
+        .button.secondary:hover{background:#0099d6}
+        footer{margin-top:40px;padding-top:20px;border-top:1px solid #e9ecef;color:#999;font-size:0.9em}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🖼️</div>
+        <h1>ImageFlow</h1>
+        <p class="tagline">Native image converter for macOS, iPhone &amp; iPad</p>
+
+        <div class="platforms">
+            <span class="platform-badge">macOS 14+</span>
+            <span class="platform-badge">iOS 17+</span>
+            <span class="platform-badge">iPadOS 17+</span>
+        </div>
+
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>PNG, JPEG, TIFF, HEIC conversion</li>
+                <li>DNG / RAW support via CoreImage</li>
+                <li>Optional resize with aspect ratio lock</li>
+                <li>PDF to image export</li>
+                <li>iPhone, iPad &amp; macOS — one codebase</li>
+                <li>All processing on-device — no cloud</li>
+                <li>No tracking, no ads, no accounts</li>
+            </ul>
+        </div>
+
+        <a href="privacy.html" class="button">Privacy Policy</a>
+        <a href="https://github.com/Rodriqe/ImageFlow" class="button secondary">GitHub</a>
+
+        <footer>
+            <p><strong>Your images stay on YOUR device</strong></p>
+            <p style="margin-top:10px;">No servers. No cloud. No tracking.</p>
+            <p style="margin-top:20px;">© 2026 ImageFlow. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
