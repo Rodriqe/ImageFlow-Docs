@@ -3,45 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - ImageFlow</title>
+    <meta name="description" content="ImageFlow support page with contact options and troubleshooting guidance.">
+    <title>ImageFlow Support</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #f5f5f7; color: #1d1d1f; }
-        .wrap { max-width: 840px; margin: 0 auto; padding: 36px 20px; }
-        .card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-        h1 { margin-top: 0; color: #007aff; }
-        h2 { margin-top: 28px; color: #333; }
-        a { color: #007aff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .cta { display: inline-block; margin-top: 16px; background: #007aff; color: #fff; padding: 12px 18px; border-radius: 10px; font-weight: 600; }
-        .meta { margin-top: 28px; color: #666; font-size: 14px; }
-        ul { line-height: 1.7; }
-        .back { display: inline-block; margin-top: 20px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(180deg, #f5f7fb 0%, #eef3ff 100%);
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+            overflow: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f4c81 0%, #1f7aa8 100%);
+            color: white;
+            padding: 40px 32px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            opacity: 0.92;
+            max-width: 580px;
+        }
+
+        .content {
+            padding: 32px;
+            display: grid;
+            gap: 24px;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 22px;
+            background: #fbfdff;
+        }
+
+        .card h2 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            color: #0f4c81;
+        }
+
+        .card p,
+        .card li {
+            color: #4b5563;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0f4c81;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #0f4c81;
+            color: white;
+        }
+
+        .button.secondary {
+            background: #e8eef7;
+            color: #0f4c81;
+        }
+
+        footer {
+            padding: 0 32px 32px;
+            color: #6b7280;
+            font-size: 0.92rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 14px;
+            }
+
+            .hero,
+            .content,
+            footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <div class="card">
+    <div class="container">
+        <section class="hero">
             <h1>ImageFlow Support</h1>
-            <p>If you need help, bug reporting, or feature requests, use the support channels below.</p>
+            <p>Need help with ImageFlow? Use the resources below to report issues, request improvements, and get guidance for conversion workflows.</p>
+        </section>
 
-            <h2>Primary Support</h2>
-            <p>Open an issue in the docs repository:</p>
-            <p><a class="cta" href="https://github.com/Rodriqe/ImageFlow-Docs/issues" target="_blank" rel="noopener">Open Support Issue</a></p>
+        <main class="content">
+            <section class="card">
+                <h2>Contact and Support</h2>
+                <p>If you need assistance, please use one of these support channels:</p>
+                <div class="actions">
+                    <a class="button" href="https://github.com/Rodriqe/ImageFlow-Docs/issues" target="_blank" rel="noopener noreferrer">Open a Support Request</a>
+                    <a class="button secondary" href="https://github.com/Rodriqe/ImageFlow-Docs" target="_blank" rel="noopener noreferrer">Documentation Repository</a>
+                </div>
+            </section>
 
-            <h2>What to include in your report</h2>
-            <ul>
-                <li>Device and OS version (macOS/iOS/iPadOS)</li>
-                <li>Input file type and expected output format</li>
-                <li>Steps to reproduce the issue</li>
-                <li>Screenshot or exact error message if available</li>
-            </ul>
+            <section class="card">
+                <h2>Before You Contact Support</h2>
+                <ul>
+                    <li>Confirm your OS version is supported (macOS 14+, iOS/iPadOS 17+).</li>
+                    <li>Include input format, output format, and exact conversion steps.</li>
+                    <li>If possible, include the exact error message shown by the app.</li>
+                    <li>Avoid sharing private files in public issues.</li>
+                </ul>
+            </section>
 
-            <h2>Privacy reminder</h2>
-            <p>ImageFlow processes files locally on-device. Please avoid uploading private files in issue reports.</p>
+            <section class="card">
+                <h2>Helpful Links</h2>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="index.html">Product Overview</a></li>
+                    <li><a href="https://github.com/Rodriqe/ImageFlow-Docs/issues" target="_blank" rel="noopener noreferrer">Known Issues and Support Requests</a></li>
+                </ul>
+            </section>
+        </main>
 
-            <p class="meta">Last updated: 2026-03-26</p>
-            <a class="back" href="index.html">← Back to Home</a>
-        </div>
+        <footer>
+            <p>Support for ImageFlow is provided through the official project channels listed above.</p>
+        </footer>
     </div>
 </body>
 </html>
